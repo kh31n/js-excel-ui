@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Excelもどき</title>
+</head>
+<body>
+<div class="main">
+</div>
+<script>
+let main = document.querySelector('.main');
+text_field = document.createElement('input');
+text_field.type = "text";
+text_field.style.border = "1px #ccc solid";
+for(let i = 0; i < 20; i++) {
+  for(let j = 0; j < 20; j++) {
+    main.innerHTML += text_field.outerHTML;
+  }
+  main.innerHTML += '<br>';
+}
+</script>
+</body>
+</html>
